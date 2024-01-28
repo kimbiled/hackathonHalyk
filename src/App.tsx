@@ -1,18 +1,20 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './index.css'
+import FAQ from '../src/components/Faq/faq';
+import Header from '../src/components/Header/header';
+import Home from '../src/components/Home/home';
+import Aside from '../src/components/Aside/aside';
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        hello
-      </div>
+      <Header />
+      <Home />
+      <FAQ/>
+      <Aside/>
     </>
   )
 }
 
-export default App
+export default App;
