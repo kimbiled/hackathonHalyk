@@ -50,7 +50,7 @@ const cardInfo = [
 export default function Home() {
     return(
         <>
-            <div className="z-0 relative font-poppins flex flex-col gap-10 items-center my-10 py-4 px-4 sm:px-10 min-h-[100px] mx-auto">
+            <div className="font-poppins flex flex-col gap-10 items-center my-10 py-4 px-4 sm:px-10 min-h-[100px] mx-auto">
                 <div>
                     <h2 className='font-poppins font-bold tracking-wide text-center text-[#323232] text-4xl'>Обучайся страхованию вместе с <span className='text-[#30A879]'> Halyk Life!</span></h2>
                 </div>

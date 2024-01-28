@@ -5,13 +5,12 @@ import home from '../../assets/imgs/home.svg';
 import info from '../../assets/imgs/info.svg';
 import statusup from '../../assets/imgs/statusup.svg';
 import microphone from '../../assets/imgs/Microphone.svg';
-import { useState } from 'react';
 
 
 export default function Aside() {
     return(
         <>
-            <section className='bg-gray-400 w-screen h-screen relative z-0'>
+            <section className='bg-gray-400 w-screen h-screen fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm z-0'>
             <aside id="default-sidebar" className="z-10 absolute font-poppins fixed top-0 right-0 z-40 w-72 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
             <div className="h-full px-3 py-4 overflow-y-auto bg-gray-100">
                 <ul className="space-y-2 font-medium flex flex-col gap-4">

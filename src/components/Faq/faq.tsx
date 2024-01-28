@@ -3,7 +3,10 @@ import logo from '../../assets/imgs/logo.svg';
 export default function Footer() {
     return(
         <>
-            <section className="text-gray-600 overflow-hidden z-0 relative">
+            <section className="text-gray-600 overflow-hidden">
+                <div>
+                    
+                </div>
                 <div className='mx-auto my-6 flex flex-col gap-3 w-full h-24'>
                     <img className="lg:w-1/2 w-48 h-16 m-auto" src={logo}/> 
                     <h2 className='font-poppins font-bold tracking-wide text-center text-[#323232] text-4xl'>Задай вопрос нашему <span className='text-[#30A879]'>ассистенту!</span></h2>
