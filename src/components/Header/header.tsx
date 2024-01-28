@@ -6,7 +6,7 @@ import {useState} from 'react';
 export default function Header() {
     return(
         <>
-            <header className='font-poppins shadow-md py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[100px] bg-[#6DC49A]'>
+            <header className='font-poppins shadow-md py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[100px] bg-green-800'>
             <div className='flex flex-row items-center justify-between relative w-full'>
                 <a> <img src={logo} alt="logo" className='w-48' /> </a>
                 <div className='flex flex-row lg:order-1 max-sm:ml-auto w-auto items-center '>

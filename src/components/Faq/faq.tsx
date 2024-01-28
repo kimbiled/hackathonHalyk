@@ -1,11 +1,27 @@
 import mascout from '../../assets/imgs/mascout.svg';
 import logo from '../../assets/imgs/logo.svg';
+import { useState } from 'react';
+import axios from 'axios';
 export default function Footer() {
+    const [prompt, setPrompt] = useState("");
+    const [response, setResponse] = useState("");
+
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        axios.post("http://127.0.0.1:5173", {prompt}).then((res)=>{
+            setResponse(res.data);
+        }).catch((err)=>{
+            console.error(err);
+        })
+    }
+
     return(
         <>
             <section className="text-gray-600 overflow-hidden">
                 <div>
-                    
+                    <button onClick={handleSubmit}>send</button>
+                    <input type="text" value={prompt} onChange={(e)=>setPrompt(e.target.value)}/>
+                    <p>{response}</p>
                 </div>
                 <div className='mx-auto my-6 flex flex-col gap-3 w-full h-24'>
                     <img className="lg:w-1/2 w-48 h-16 m-auto" src={logo}/> 
